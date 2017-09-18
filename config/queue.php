@@ -52,9 +52,9 @@ return [
             'driver' => 'sqs',
             'key' => env('SQS_KEY'),
             'secret' => env('SQS_SECRET'),
-            'prefix' => 'https://sqs.ap-southeast-2.amazonaws.com/656016365641',
-            'queue' => 'FlowTrax',
-            'region' => 'ap-southeast-2',
+            'prefix' => env('SQS_PREFIX'),
+            'queue' => env('SQS_QUEUE'),
+            'region' => env('SQS_REGION'),
         ],
 
         'redis' => [
