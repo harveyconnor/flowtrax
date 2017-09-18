@@ -11,6 +11,13 @@
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::prefix('tracks')->group(function () {
+
+    Route::post('submit', 'TrackSubmissionController@store')->name('tracks.submit');
+
 });
