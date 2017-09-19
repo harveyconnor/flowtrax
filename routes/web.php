@@ -14,7 +14,7 @@
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::prefix('tracks')->group(function () {
 

@@ -10,6 +10,7 @@
 
     <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    @include('googleanalytics')
 </head>
 <body>
 
